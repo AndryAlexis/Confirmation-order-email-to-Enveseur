@@ -1,0 +1,381 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1m maximum-scale=1">
+    <style media="screen"></style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table, td {
+            border-collapse: collapse !important;
+        }
+
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        a:hover {
+            text-decoration: none !important;
+        }
+
+        /* DESKTOP STYLES */
+
+        @media (min-width: 900px) {
+            h1 {
+                font-size: 32px !important;
+                line-height: 32px !important;
+            }
+
+            .cyan-box {
+                padding: 0 70px 0 70px !important;
+            }
+
+            .order-number {
+                padding: 30px 30px 10px 40px !important;
+            }
+
+            .total-import {
+                padding: 30px 90px 20px 20px !important;
+            }
+
+            .product {
+                padding: 0 40px 0 40px !important;
+            }
+
+            .product img {
+                width: 150px !important;
+            }
+
+            .prices {
+                padding: 0px 90px 20px 20px !important;
+            }
+
+            .line-in-prices {
+                padding: 0 100px 0 100px !important;
+            }
+
+            .empty-element {
+                padding-bottom: 25px !important;
+            }
+
+            .content-table {
+                max-width: 1000px !important;
+            }
+        } 
+
+        /* ANDROID CENTER FIX */
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f4f4f4; margin: 0 !important; padding: 0 !important;">
+<!-- HIDDEN PREHEADER TEXT -->
+<!-- <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: 'Roboto', Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> We're thrilled to have you here! Get ready to dive into your new account. </div> -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#BFE3FF" align="center">
+            <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;">
+                <tr>
+                    <td align="center" valign="top" style="padding: 40px 10px 40px 10px;"> </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#BFE3FF" align="center" style="padding: 0px 1% 0px 1%;">
+            <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;">
+                <tr>
+                    <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
+                        <img src="https://res.cloudinary.com/env-cloud/dpr_auto,f_auto,q_auto/v1/images/logo_es.png" width="300" style="display: block; border: 0px;" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#f4f4f4" align="center" style="padding: 0px 1% 0px 1%;">
+            <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;">
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 15px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 1; font-weight: bolder; font-size: 30px;">
+                        <p style="margin: 0;" align="center">¡Gracias por tu pedido!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; line-height: 25px;">
+                        <p style="font-size: 14px; word-wrap: break-word; padding: 0 30px 0 30px">
+                            <span style="font-weight: 100;">Te enviamos la confirmación de tu pedido realizado el </span><span id="fecha" style="font-weight: bolder;">23/11/2021</span> a las <span id="hora" style="font-weight: bolder;">09:24:55</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 8px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px; font-weight: bolder; font-size: 20px;">
+                        <p style="margin: 0;" align="center">Datos de envío</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="padding: 10px 30px 0px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px; font-weight: bolder; font-size: 14px;">
+                        <p style="margin: 0;" align="center">Jordi Raventós</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="padding: 0px 30px 8px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px; font-weight: 100; font-size: 14px;">
+                        <p style="margin: 0;" align="center">
+                            C/Vilafranca, 32
+                            <br>
+                            Barcelona 08797
+                            <br>
+                            España (Península)
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="margin: 0; padding: 10px 10px 50px 10px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px;  line-height: 15px; font-size: 12px;">
+                        <p style="margin: 0; padding: 10px 0 10px 0;" align="center">
+                            Contáctanos si detectas algún error en tus datos de envío.
+                            <br>
+                            Para comprobar el estado de tu pedido, <a href="https://www.sobres.es/contact">haz clic aquí.</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 15px; font-size: 12px;">
+                    </td>
+                </tr>
+                <tr>
+                    <!-- padding: 10px 0 0 0;  -->
+                    <td class="cyan-box" bgcolor="#ffffff" align="center" style="padding: 0; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 15px; font-size: 12px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td class="order-number" bgcolor="EFF8FF" align="left" style="padding: 30px 30px 15px 15px; border-radius: 4px 4px 0 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bolder; line-height: 20px;">
+                                    <h2 style="font-size: 20px; font-weight: bolder; color: #111111; margin: 0;">Pedido 2091275</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product" bgcolor="#EFF8FF" align="center" style="width: 20%; padding: 15px 2% 20px 2%; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 25px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                        <tr>
+                                            <td style="width: 70px; padding-bottom: 10px;">
+                                            </td>
+                                            <td align="center" style="margin: 0; padding-bottom: 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px;">
+                                                <h5 style="margin: 0; padding: 0; font-size: 15px; color: black; width: 100%;">
+                                                    <strong>Unidades</strong>
+                                                </h5>
+                                            </td>
+                                            <td align="center" style="width: 45%; margin: 0; padding: 0 5px 10px 5px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px;">
+                                                <h5 style="margin: 0; padding: 0; font-size: 15px; color: black;">
+                                                    <strong>Descripción</strong>
+                                                </h5>
+                                            </td>
+                                            <td align="center" style="margin: 0; padding: 0 5px 10px 0; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px;">
+                                                <h5 style="margin: 0; padding: 0; font-size: 15px; color: black;">
+                                                    <strong>Precio</strong>
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#ffffff" style=" width: 70px; margin: 0; padding: 0; border-radius: 4px 0 0 4px; overflow: hidden;">
+                                                <table border="0" cellpadding="0" cellspacing="0" style="max-width: 70px;">
+                                                    <tr>
+                                                        <td bgcolor="#ffffff" align="center" valign="top">
+                                                            <img src="https://res.cloudinary.com/env-cloud/image/upload/b_rgb:FFFFFF,c_limit,dpr_1.0,f_auto,h_1026,q_auto,w_1400/$w_w/l_overlays:copy-overlay,w_$w/c_limit,h_1026,w_1400/v1/shopimages/products/1200/AD2862.jpg?pgw=1" width="70" height="70" style="display: block; border: 0px;" alt="Product" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td bgcolor="#ffffff" align="center" style="width: 15%; margin: 0; padding: 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif;">
+                                                <p style="margin: 0; padding: 0; font-size: 17px; color: black; word-break: break-all; width: 100%;">
+                                                    x100
+                                                </p>
+                                            </td>
+                                            <td bgcolor="#ffffff" align="center" style="width: 55%; margin: 0; padding: 0 5px 0 5px; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px;">
+                                                <p align="center" style="padding: 5px 0 5px 0; margin: 0; font-size: 10px; width: 100%;">
+                                                    <span style="font-size: 17px; color: black;">
+                                                        <strong>
+                                                            A0162
+                                                        </strong>
+                                                    </span>
+                                                    <br>
+                                                    <span style="font-size: 14px; word-wrap: break-word;">Sobre kraft acanalado de 62 x 94mm</span>
+                                                </p>
+                                            </td>
+                                            <td bgcolor="#ffffff" align="center" style="width: 15%; margin: 0; padding: 0 5px 0 0; border-radius: 0 4px 4px 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px;">
+                                                <p style="margin: 0; padding: 0; font-size: 10px; color: black;">
+                                                    <span style="font-size: 17px;">
+                                                        <strong>
+                                                            0,15 €
+                                                        </strong>
+                                                    </span>
+                                                    <br>
+                                                    <span style="font-size: 12px; word-break: keep-all;">(0,15 €/u.)</span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td class="empty-element" style="padding-bottom: 10px"></td>
+                                        </tr> -->
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFF8FF" class="total-import" align="right" style="border-collapse: collapse; padding: 20px 25px 10px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 20px; color: black;">
+                                    <p style="margin: 0; padding: 0; width: 100%;">
+                                        <span style="font-weight: lighter;">
+                                            Importe total artículos: 
+                                        </span>
+                                        <span>
+                                            <strong>
+                                                0,15 €
+                                            </strong>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; padding: 20px 25px 10px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 20px; color: black;">
+                                    <p style="margin: 0; padding: 0; width: 100%;">
+                                        <span style="font-weight: lighter;">
+                                            Envío estándar:                                                    
+                                        </span>
+                                        <span>
+                                            <strong>4,95 €</strong>  
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; padding: 20px 25px 10px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 20px; color: black;">
+                                    <p style="margin: 0; padding: 0; width: 100%;">
+                                        <span style="font-weight: lighter;">
+                                            IVA (21%): 
+                                        </span>
+                                        <span>
+                                            <strong>1,07 €</strong>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFF8FF" class="line-in-prices" align="center" style="border-collapse: collapse; width: 10px; padding: 0 25px 0 25px;">
+                                    <table width="100%">
+                                        <tr>
+                                            <td align="center" style="border-collapse: collapse; border-bottom: 2px dashed #6896BB; height: 1px; margin: 0; padding-left: 20px;">&nbsp;</td>    
+                                        </tr>
+                                    </table>
+                                </td>      
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFF8FF" style="border-collapse: collapse; padding: 15px 0"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; margin: 0; padding: 0 25px 10px 10px; line-height: 1;">
+                                    <p style="margin: 0; padding: 0; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 30px; color: black; line-height: 1;">
+                                        <strong>Total: 6,17 €</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; margin: 0; padding: 0 25px 20px 10px; border-radius: 0 0 4px 4px;">
+                                    <p style="margin: 0; padding: 0; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 12px; color: black; line-height: 1;">
+                                        <span style="font-style: italic;">Método de pago:</span> 
+                                        <span><strong>Tarjeta</strong></span>
+                                    </p>
+                                    <br>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff" border="0" style="border-collapse: collapse; padding: 0; margin: 0;" width="100%" valign="top">
+                                    <img src="https://res.cloudinary.com/env-cloud/image/upload/v1646233727/SendGrid/cutout.png" style="display: block; margin: 0; padding: 0;" border="0" width="100%" valign="top">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr bgcolor="#ffffff">
+                    <td align="center" style="border-collapse: collapse; padding: 50px 0 0 0">
+                        <p style="margin: 0; padding: 30px 0 10px 0; font-size: 20px;">
+                            ¿Todavía no nos sigues?
+                        </p>
+                    </td>
+                </tr>
+                <tr bgcolor="#ffffff"> 
+                    <td style="border-collapse: collapse; padding: 0; margin: 0; display: block;" width="100%" align="center">
+                        <a href="https://es-es.facebook.com/pg/SobresEspana/posts/" border="0" style="margin: 0; padding: 0; text-decoration: none;">
+                            <img src="https://res.cloudinary.com/env-cloud/image/upload/v1629107278/email/Icons/iconos_sigantures_facebook.jpg"/>
+                        </a>
+                        <a href="https://es.linkedin.com/company/enveseur" style="margin: 0; padding: 0; text-decoration: none;">
+                            <img src="https://res.cloudinary.com/env-cloud/image/upload/v1629107288/email/Icons/iconos_sigantures_linkedin.jpg"/>
+                        </a>
+                        <a href="https://www.instagram.com/sobres.es/" style="margin: 0; padding: 0; text-decoration: none;">
+                            <img src="https://res.cloudinary.com/env-cloud/image/upload/v1629107283/email/Icons/iconos_sigantures_instagram.jpg"/>
+                        </a>
+                    </td>
+                </tr>
+                <tr bgcolor="#ffffff">
+                    <td align="center" style="border-collapse: collapse; padding: 50px 0 0 0">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px 0 0 0"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+
+</html>
