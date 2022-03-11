@@ -22,12 +22,6 @@
             -ms-text-size-adjust: 100%;
         }
 
-        table,
-        td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-
         img {
             -ms-interpolation-mode: bicubic;
         }
@@ -69,7 +63,7 @@
 
         /* DESKTOP STYLES */
 
-        @media (min-width: 900px) {
+        @media (min-width: 1025px) {
             h1 {
                 font-size: 32px !important;
                 line-height: 32px !important;
@@ -88,11 +82,7 @@
             }
 
             .product {
-                padding: 0 40px 0 40px !important;
-            }
-
-            .product img {
-                /* width: 150px !important; */
+                padding: 0 20px 0 20px !important;
             }
 
             .prices {
@@ -116,6 +106,14 @@
             }
         } 
 
+        /* MOVILE STYLES */
+        @media (max-width: 600px) {
+            .product {
+                padding: 0 2% 0 2% !important;
+            }
+        }
+
+
         /* ANDROID CENTER FIX */
         div[style*="margin: 16px 0;"] {
             margin: 0 !important;
@@ -125,13 +123,13 @@
 
 <body style="background-color: #f4f4f4; margin: 0 !important; padding: 0 !important;">
 <!-- HIDDEN PREHEADER TEXT -->
-<!-- <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: 'Roboto', Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> We're thrilled to have you here! Get ready to dive into your new account. </div> -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: 'Roboto', Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> Sobres España - Confirmación de pedido XXXXXXX</div>
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
         <td bgcolor="#BFE3FF" align="center">
             <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;">
                 <tr>
-                    <td align="center" valign="top" style="padding: 40px 10px 40px 10px;"></td>
+                    <td align="center" valign="top" style="padding: 10px 10px 40px 10px;"></td>
                 </tr>
             </table>
         </td>
@@ -140,8 +138,8 @@
         <td bgcolor="#BFE3FF" align="center" style="padding: 0 1% 0 1%;">
             <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;">
                 <tr>
-                    <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; ">
-                        <img id="logo" src="https://res.cloudinary.com/env-cloud/dpr_auto,f_auto,q_auto/v1/images/logo_es.png" width="60%" style="display: block; border: 0px;" />
+                    <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px;">
+                        <img id="logo" src="https://res.cloudinary.com/env-cloud/dpr_auto,f_auto,q_auto/v1/images/logo_es.png" width="60%" style="display: block; border: 0px;"/>
                     </td>
                 </tr>
             </table>
@@ -151,30 +149,27 @@
         <td bgcolor="#f4f4f4" align="center" style="padding: 0px 1% 0px 1%;">
             <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;">
                 <tr>
-                    <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 15px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; line-height: 1; font-weight: bolder;">
-                        <p style="margin: 0; font-size: 25px;" align="center">¡Gracias por tu pedido!</p>
+                    <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 5px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; line-height: 1; font-weight: bolder;">
+                        <p style="margin: 0; font-size: 20px;" align="center">¡Gracias por tu pedido!</p>
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#ffffff" align="center" style="color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; line-height: 25px;">
+                    <td bgcolor="#ffffff" align="center" style="color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; line-height: 1;">
                         <p style="font-size: 14px; word-wrap: break-word; padding: 0 30px 0 30px">
                             <span style="font-weight: 100;">Te enviamos la confirmación de tu pedido realizado el </span><span id="fecha" style="font-weight: bolder;">23/11/2021</span> a las <span id="hora" style="font-weight: bolder;">09:24:55</span>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 8px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px; font-weight: bolder; font-size: 20px;">
+                    <td bgcolor="#ffffff" align="center" style="padding: 10px 30px 0 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 30px; font-weight: bolder; font-size: 18px;">
                         <p style="margin: 0;" align="center">Datos de envío</p>
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#ffffff" align="center" style="padding: 10px 30px 0px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px; font-size: 14px;">
-                        <p style="margin: 0;" align="center">Jordi Raventós</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td bgcolor="#ffffff" align="center" style="padding: 0px 30px 8px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px; font-weight: 100; font-size: 14px;">
+                    <td bgcolor="#ffffff" align="center" style="padding: 0px 30px 8px 30px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 18px; font-weight: 100; font-size: 14px;">
                         <p style="margin: 0;" align="center">
+                            Jordi Raventós
+                            <br>
                             C/Vilafranca, 32
                             <br>
                             Barcelona 08797
@@ -184,8 +179,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#ffffff" align="center" style="margin: 0; padding: 10px 10px 50px 10px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px;  line-height: 15px; font-size: 12px;">
-                        <p style="margin: 0; padding: 10px 0 10px 0;" align="center">
+                    <td bgcolor="#ffffff" align="center" style="margin: 0; padding: 10px 10px 30px 10px; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; line-height: 15px; font-size: 12px;">
+                        <p style="margin: 0; padding: 5px 0 0 0;" align="center">
                             Contáctanos si detectas algún error en tus datos de envío.
                             <br>
                             Para comprobar el estado de tu pedido, <a href="https://www.sobres.es/contact">haz clic aquí.</a>
@@ -193,42 +188,37 @@
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#ffffff" align="center" style="color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 15px; font-size: 12px;">
-                    </td>
-                </tr>
-                <tr>
-                    <!-- padding: 10px 0 0 0;  -->
-                    <td class="cyan-box" bgcolor="#ffffff" align="center" style="padding: 0; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 15px; font-size: 12px;">
+                    <td class="cyan-box" bgcolor="#ffffff" align="center" style="padding: 0; color: black; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 15px;">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
-                                <td class="order-number" bgcolor="EFF8FF" align="left" style="padding: 30px 30px 15px 15px; border-radius: 4px 4px 0 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bolder; line-height: 20px;">
-                                    <h2 style="font-size: 20px; font-weight: bolder; color: #111111; margin: 0;">Pedido 2091275</h2>
+                                <td class="order-number" bgcolor="#EFF8FF" align="center" width="100%" style="padding: 30px 2% 25px 2%; border-radius: 4px 4px 0 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: bolder; line-height: 20px;">
+                                    <h2 style="font-size: 18px; font-weight: bolder; color: #111111; margin: 0;">Pedido 2091275</h2>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="product" bgcolor="#EFF8FF" align="center" style="width: 20%; padding: 15px 2% 20px 2%; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 25px;">
+                            <tr bgcolor="#ffffff">
+                                <td class="product" bgcolor="#EFF8FF" align="center" style="width: 20%; padding: 15px 2% 20px 2%; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 25px;">
                                     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
                                         <tr>
-                                            <td style="width: 65px;">
+                                            <td style="width: 60px;">
                                             </td>
                                             <td align="center" style="margin: 0; padding: 0 0 10px 5px;; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px;">
-                                                <h5 style="margin: 0; padding: 0; font-size: 16px; color: black; width: 100%; font-weight: lighter;">
+                                                <h5 style="margin: 0; padding: 0; font-size: 15px; color: black; width: 100%; font-weight: lighter;">
                                                     Unidades
                                                 </h5>
                                             </td>
                                             <td align="center" style="max-width: 120px; margin: 0; padding: 0 5px 10px 5px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px;">
-                                                <h5 style="margin: 0; padding: 0; font-size: 16px; color: black; width: 100%; font-weight: lighter;">
+                                                <h5 style="margin: 0; padding: 0; font-size: 15px; color: black; width: 100%; font-weight: lighter;">
                                                     Descripción
                                                 </h5>
                                             </td>
                                             <td align="center" style="margin: 0; padding: 0 5px 10px 0; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px;">
-                                                <h5 style="margin: 0; padding: 0; font-size: 16px; color: black; width: 100%; font-weight: lighter;">
+                                                <h5 style="margin: 0; padding: 0 15px 0 0; font-size: 15px; color: black; width: 100%; font-weight: lighter;">
                                                     Precio
                                                 </h5>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td bgcolor="#ffffff" style="width: 80px; margin: 0; padding: 0; border-radius: 4px 0 0 4px; overflow: hidden;">
+                                            <td bgcolor="#ffffff" style="width: 60px; margin: 0; padding: 0; border-radius: 4px 0 0 4px; overflow: hidden;">
                                                 <table cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td bgcolor="#ffffff" align="center" valign="top">
@@ -237,14 +227,14 @@
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td bgcolor="#ffffff" align="center" style="width: 70px; margin: 0; padding: 0 0 0 5px; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif;">
-                                                <p style="margin: 0; padding: 0; font-size: 13px; color: black; word-break: break-all; width: 100%;">
+                                            <td bgcolor="#ffffff" align="center" style="width: 70px; margin: 0; padding: 0 0 0 5px; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                <p style="margin: 5px 0 5px 0; padding: 0; font-size: 13px; color: black; word-break: break-all; width: 100%;">
                                                     x10.529
                                                 </p>
                                             </td>
                                             <td bgcolor="#ffffff" align="center" style="width: 150px; margin: 0; padding: 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1;">
-                                                <p align="center" style="padding: 0; margin: 0; font-size: 10px; width: 100%;">
-                                                    <span style="font-size: 16px; word-break: break-all; color: black;">
+                                                <p align="center" style="padding: 5px 0 5px 0; margin: 0; font-size: 10px; width: 100%;">
+                                                    <span style="font-size: 13px; word-break: break-all; color: black;">
                                                         <strong>
                                                             A0162
                                                         </strong>
@@ -253,23 +243,23 @@
                                                     <span style="font-size: 13px; word-wrap: break-word;">Sobre kraft acanalado de 62 x 94mm</span>
                                                 </p>
                                             </td>
-                                            <td bgcolor="#ffffff" align="center" style="width: 70px; margin: 0; padding: 0 6px 0 5px; border-radius: 0 4px 4px 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1.1;">
+                                            <td bgcolor="#ffffff" align="center" style="width: 70px; margin: 0; padding: 0 15px 0 5px; border-radius: 0 4px 4px 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                                 <p style="margin: 0; padding: 0; font-size: 10px; color: black;">
-                                                    <span style="font-size: 16px;">
+                                                    <span style="font-size: 13px;">
                                                         <strong>
                                                             65.342€
                                                         </strong>
                                                     </span>
                                                     <br>
-                                                    <span style="font-size: 0.6rem; word-break: keep-all;">(0,15 €/u.)</span>
+                                                    <span style="font-size: 13px; word-break: keep-all;">(0,15 €/u.)</span>
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="empty-element" style="padding: 0 0 5px 0; margin: 0;"></td>
+                                            <td class="empty-element" style="height: 2px;"></td>
                                         </tr>
                                         <tr>
-                                            <td bgcolor="#ffffff" style="width: 80px; margin: 0; padding: 0; border-radius: 4px 0 0 4px; overflow: hidden;">
+                                            <td bgcolor="#ffffff" style="width: 60px; margin: 0; padding: 0; border-radius: 4px 0 0 4px; overflow: hidden;">
                                                 <table cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td bgcolor="#ffffff" align="center" valign="top">
@@ -278,45 +268,45 @@
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td bgcolor="#ffffff" align="center" style="width: 70px; margin: 0; padding: 0 0 0 5px; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif;">
-                                                <p style="margin: 0; padding: 0; font-size: 13px; color: black; word-break: break-all; width: 100%;">
+                                            <td bgcolor="#ffffff" align="center" style="width: 70px; margin: 0; padding: 0 0 0 5px; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                <p style="margin: 5px 0 5px 0; padding: 0; font-size: 13px; color: black; word-break: break-all; width: 100%;">
                                                     x10.529
                                                 </p>
                                             </td>
                                             <td bgcolor="#ffffff" align="center" style="width: 150px; margin: 0; padding: 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1;">
-                                                <p align="center" style="padding: 0; margin: 0; font-size: 10px; width: 100%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">
-                                                    <span style="font-size: 16px; word-break: break-all; color: black;">
+                                                <p align="center" style="padding: 5px 0 5px 0; margin: 0; font-size: 10px; width: 100%; overflow: hidden; text-overflow:ellipsis; width: 100%;">
+                                                    <span style="font-size: 13px; word-break: break-all; color: black;">
                                                         <strong>
                                                             A0162
                                                         </strong>
                                                     </span>
                                                     <br>
-                                                    <span style="font-size: 13px; word-wrap: break-word;">Sobre kraft acanalado de 62 x 94mm</span>
+                                                    <span style=" font-size: 13px; word-wrap: break-word;">Sobre kraft acanalado de 62 x 94mm Sobre kraft acanalado de 62 x 94mm Sobre kraft acanalado de 62 x 94mm</span>
                                                 </p>
                                             </td>
-                                            <td bgcolor="#ffffff" align="center" style="width: 70px; margin: 0; padding: 0 5px 0 5px; border-radius: 0 4px 4px 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1.1;">
+                                            <td bgcolor="#ffffff" align="center" style="width: 70px; margin: 0; padding: 0 15px 0 5px; border-radius: 0 4px 4px 0; color: #666666; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                                 <p style="margin: 0; padding: 0; font-size: 10px; color: black;">
-                                                    <span style="font-size: 16px;">
+                                                    <span style="font-size: 13px;">
                                                         <strong>
                                                             65.342€
                                                         </strong>
                                                     </span>
                                                     <br>
-                                                    <span style="font-size: 0.6rem; word-break: keep-all;">(0,15 €/u.)</span>
+                                                    <span style="font-size: 13px; word-break: keep-all;">(0,15 €/u.)</span>
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="empty-element" style="padding: 0 0 5px 0; margin: 0;"></td>
+                                            <td class="empty-element" style="height: 2px;"></td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                             <tr>
-                                <td bgcolor="#EFF8FF" class="total-import" align="right" style="border-collapse: collapse; padding: 20px 25px 10px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 20px; color: black;">
+                                <td bgcolor="#EFF8FF" class="total-import" align="right" style="border-collapse: collapse; padding: 0px 25px 5px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 16px; color: black;">
                                     <p style="margin: 0; padding: 0; width: 100%;">
-                                        <span style="font-weight: lighter;">
-                                            Importe total artículos: 
+                                        <span style="font-weight: lighter; font-size: 15px;">
+                                            Importe total: 
                                         </span>
                                         <span>
                                             <strong>
@@ -327,9 +317,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; padding: 20px 25px 10px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 20px; color: black;">
+                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; padding: 0px 25px 5px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 16px; color: black;">
                                     <p style="margin: 0; padding: 0; width: 100%;">
-                                        <span style="font-weight: lighter;">
+                                        <span style="font-weight: lighter; font-size: 15px;">
                                             Envío estándar:                                                    
                                         </span>
                                         <span>
@@ -339,9 +329,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; padding: 20px 25px 10px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 20px; color: black;">
+                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; padding: 0px 25px 0px 10px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 16px; color: black;">
                                     <p style="margin: 0; padding: 0; width: 100%;">
-                                        <span style="font-weight: lighter;">
+                                        <span style="font-weight: lighter; font-size: 15px;">
                                             IVA (21%): 
                                         </span>
                                         <span>
@@ -354,7 +344,7 @@
                                 <td bgcolor="#EFF8FF" class="line-in-prices" align="center" style="border-collapse: collapse; width: 10px; padding: 0 25px 0 25px;">
                                     <table width="100%">
                                         <tr>
-                                            <td align="center" style="border-collapse: collapse; border-bottom: 2px dashed #6896BB; height: 1px; margin: 0; padding-left: 20px;">&nbsp;</td>    
+                                            <td align="center" bgcolor="#EFF8FF" style="border-collapse: collapse; border-bottom: 2px dashed #8EB0CC; height: 1px; margin: 0; padding-left: 20px;">&nbsp;</td>    
                                         </tr>
                                     </table>
                                 </td>      
@@ -364,68 +354,55 @@
                             </tr>
                             <tr>
                                 <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; margin: 0; padding: 0 25px 10px 10px; line-height: 1;">
-                                    <p style="margin: 0; padding: 0; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 30px; color: black; line-height: 1;">
+                                    <p style="margin: 0; padding: 0; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 16px; color: black; line-height: 1;">
                                         <strong>Total: 6,17 €</strong>
                                     </p>
                                 </td>
                             </tr>
                             <tr>
-                                <td bgcolor="#EFF8FF" class="prices" align="right" style="border-collapse: collapse; margin: 0; padding: 0 25px 20px 10px;">
-                                    <p style="margin: 0; padding: 0; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 12px; color: black; line-height: 1;">
+                                <td bgcolor="#F1F9FF" class="prices" align="right" style="border-collapse: collapse; margin: 0; padding: 0 25px 5px 10px;">
+                                    <p style="margin: 0; padding: 0; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 13px; color: black; line-height: 1;">
                                         <span style="font-style: italic;">Método de pago:</span>
-                                        <span><strong>Tarjeta</strong></span>
+                                        <span><strong>tarjeta</strong></span>
                                     </p>
-                                    <br>
-                                    <br>
                                 </td>
                             </tr>
                             <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.9;" width="100%" height="10px" valign="top">
+                                <td class="cyan-box" bgcolor="#F2F9FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0;" width="100%" height="5px" valign="top">
                                 </td>
                             </tr>
                             <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.8;" width="100%" height="10px" valign="top">
+                                <td class="cyan-box" bgcolor="#F4FBFF" border="0" style="border-collapse: collapse; padding: 0; margin: 0;" width="100%" height="5px" valign="top">
                                 </td>
                             </tr>
                             <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.7;" width="100%" height="10px" valign="top">
+                                <td class="cyan-box" bgcolor="#F5FBFF" border="0" style="border-collapse: collapse; padding: 0; margin: 0;" width="100%" height="5px" valign="top">
+                                </td>
+                            </tr>
+
+                            <tr >
+                                <td class="cyan-box" bgcolor="#F7FCFF" border="0" style="border-collapse: collapse; padding: 0; margin: 0;" width="100%" height="5px" valign="top">
                                 </td>
                             </tr>
                             <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.6;" width="100%" height="10px" valign="top">
+                                <td class="cyan-box" bgcolor="#F9FCFF" border="0" style="border-collapse: collapse; padding: 0; margin: 0;" width="100%" height="5px" valign="top">
                                 </td>
                             </tr>
                             <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.5;" width="100%" height="10px" valign="top">
-                                </td>
-                            </tr>
-                            <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.4;" width="100%" height="10px" valign="top">
-                                </td>
-                            </tr>
-                            <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.3;" width="100%" height="10px" valign="top">
-                                </td>
-                            </tr>
-                            <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.2;" width="100%" height="10px" valign="top">
-                                </td>
-                            </tr>
-                            <tr >
-                                <td class="cyan-box" bgcolor="#EFF8FF" border="0" style="border-collapse: collapse; padding: 0; margin: 0; opacity: 0.1;" width="100%" height="10px" valign="top">
+                                <td class="cyan-box" bgcolor="#FBFDFF" border="0" style="border-collapse: collapse; padding: 0; margin: 0;" width="100%" height="5px" valign="top">
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
-                <tr bgcolor="#ffffff">
-                    <td align="center" style="border-collapse: collapse; padding: 50px 0 0 0">
-                        <p style="margin: 0; padding: 30px 0 10px 0; font-size: 20px;">
+                <tr bgcolor="#FCFEFF">
+                    <td align="center" style="border-collapse: collapse; padding: 30px 0 0 0">
+                        <p style="margin: 0; padding: 0 0 10px 0; font-size: 14px;">
                             ¿Todavía no nos sigues?
                         </p>
                     </td>
                 </tr>
-                <tr bgcolor="#ffffff"> 
+                <tr bgcolor="#FEFFFF"> 
                     <td style="border-collapse: collapse; padding: 0; margin: 0; display: block;" width="100%" align="center">
                         <a href="https://es-es.facebook.com/pg/SobresEspana/posts/" border="0" style="margin: 0; padding: 0; text-decoration: none;">
                             <img src="https://res.cloudinary.com/env-cloud/image/upload/v1646395070/email/Icons/iconos_sigantures_facebook.jpg"/>
@@ -436,17 +413,14 @@
                         <a href="https://www.instagram.com/sobres.es/" style="margin: 0; padding: 0; text-decoration: none;">
                             <img src="https://res.cloudinary.com/env-cloud/image/upload/v1629107283/email/Icons/iconos_sigantures_instagram.jpg"/>
                         </a>
-                        <a href="https://www.pinterest.es/enveseur/" style="margin: 0; padding: 0; text-decoration: none;">
-                            <img src="https://res.cloudinary.com/env-cloud/image/upload/v1646394330/email/Icons/iconos_signatures_pinterest.jpg"/>
-                        </a>
                     </td>
                 </tr>
                 <tr bgcolor="#ffffff">
-                    <td align="center" style="border-collapse: collapse; padding: 50px 0 0 0">
+                    <td align="center" style="border-collapse: collapse; padding: 25px 0 0 0">
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding: 10px 0 0 0"></td>
+                    <td style="padding: 5px 0 0 0"></td>
                 </tr>
             </table>
         </td>
