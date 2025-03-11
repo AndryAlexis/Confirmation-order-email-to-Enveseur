@@ -1,1 +1,1 @@
-An layout for emails by for Enveseur S.L.
+An layout for emails made for Enveseur S.L.
